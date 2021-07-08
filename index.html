@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation | Mindmap</title>
+     <link rel="icon" href="./logo.png" type="image/gif" sizes="16x16">
+    <meta name="description" content="Checkpoint for Mind-Map 2.1, an interactive application to go through before exam, created by Amlan Saha Kundu for UPSC and WBCS."/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="stylevalidation.css" />
+</head>
+
+<body>
+    <div class="login-div">
+        <div class="logo"></div>
+        <div class="title">Welcome back, Amlan!</div>
+        <div class="sub-title">Please enter the password for<br> <br><b id="appname">Study-Stat</b></div>
+        <div class="fields">
+            <div id="loginbox" class="lightbox">
+                <div class="horizontal">
+                        
+                            <input id="password" type="password" placeholder="password" />
+                            <button id="loginbutton" type="button">Enter</button>
+                        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+    <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+    <script type="text/javascript">
+        "use strict";
+
+
+        function loadPage(pwd) {
+
+            var hash = pwd;
+            hash = Sha1.hash(pwd);
+            var url = hash + "/index.html";
+
+            $.ajax({
+                url: url,
+                dataType: "html",
+                success: function(data) {
+
+                    window.location = url;
+
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+
+
+                    parent.location.hash = hash;
+
+                    //$("#wrongPassword").show();
+                    $("#password").attr("placeholder", "wrong password");
+                    $("#password").val("");
+                }
+            });
+        }
+
+
+        $("#loginbutton").on("click", function() {
+            loadPage($("#password").val());
+        });
+        $("#password").keypress(function(e) {
+            if (e.which == 13) {
+
+                loadPage($("#password").val());
+            }
+        });
+        $("#password").focus();
+
+    </script>
+
+</body>
+
+</html>
