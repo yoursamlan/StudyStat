@@ -1,0 +1,80 @@
+.month {
+			fill: none;
+			stroke: #555;
+			stroke-width: 0.5px;
+		}
+
+.day {
+			fill: #fff;
+			stroke: #ddd;
+		}
+
+ text {
+			font-family: "Comfortaa";
+			font-size: 1.5em;
+		}
+
+.dayLabel {
+			fill: #aaa;
+			font-size: 0.8em;
+		}
+
+ .monthLabel {
+			text-anchor: middle;
+			font-size: 0.8em;
+			fill: #aaa;
+		}
+
+ .yearLabel {
+			fill: #aaa;
+			font-size: 1.2em;
+		}
+
+.heatmap {
+margin: auto;
+	display: block;
+	text-align: center;
+}
+
+#switchlist {
+	list-style-type: none;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "comfortaa";
+	color: #999;
+	width: 80%;
+}
+
+#switchlist li{
+	text-align: center;
+	font-size: 85%;
+}
+
+
+#switchlist a{
+	text-decoration: none;
+	color: #999;
+	padding: 1vw 0.75vw;
+	
+}
+#switchlist a:visited{
+	background: #f00;
+	
+}
+
+#hmframe {
+	overflow-y: hidden;
+	height: 20vw;
+	width:80vw;
+}
+
+@media screen and (min-width: 1000px) {
+ #switchlist a{
+	 padding-left: 2.5vw;
+	 padding-right: 2.5vw;
+	 text-align: center;
+	 font-size: 120%;
+}
+}
+
