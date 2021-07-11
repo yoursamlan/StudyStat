@@ -1,37 +1,37 @@
 .month {
-			fill: none;
-			stroke: #555;
-			stroke-width: 0.5px;
-		}
+	fill: none;
+	stroke: #555;
+	stroke-width: 0.5px;
+}
 
 .day {
-			fill: #fff;
-			stroke: #ddd;
-		}
+	fill: #fff;
+	stroke: #ddd;
+}
 
- text {
-			font-family: "Comfortaa";
-			font-size: 1.5em;
-		}
+text {
+	font-family: "Comfortaa";
+	font-size: 1.5em;
+}
 
 .dayLabel {
-			fill: #aaa;
-			font-size: 0.8em;
-		}
+	fill: #aaa;
+	font-size: 0.8em;
+}
 
- .monthLabel {
-			text-anchor: middle;
-			font-size: 0.8em;
-			fill: #aaa;
-		}
+.monthLabel {
+	text-anchor: middle;
+	font-size: 0.8em;
+	fill: #aaa;
+}
 
- .yearLabel {
-			fill: #aaa;
-			font-size: 1.2em;
-		}
+.yearLabel {
+	fill: #aaa;
+	font-size: 1.2em;
+}
 
 .heatmap {
-margin: auto;
+	margin: auto;
 	display: block;
 	text-align: center;
 }
@@ -46,36 +46,37 @@ margin: auto;
 	width: 80%;
 }
 
-#switchlist li{
+#switchlist li {
 	text-align: center;
 	font-size: 85%;
 }
 
 
-#switchlist a{
+#switchlist a {
 	text-decoration: none;
 	color: #999;
 	padding: 1vw 0.75vw;
-	
+
 }
-#switchlist a:visited{
+
+#switchlist a:visited {
 	background: #f00;
-	
+
 }
 
 #hmframe {
 	overflow-y: hidden;
 	height: 20vw;
-	width:80vw;
+	width: 80vw;
 }
 
-@media screen and (min-width: 1000px) {
- #switchlist a{
-	 padding-left: 2.5vw;
-	 padding-right: 2.5vw;
-	 text-align: center;
-	 font-size: 120%;
-}
+@media screen and (min-width: 1200px) {
+	#switchlist a {
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		text-align: center;
+		font-size: 120%;
+	}
 }
 
 
@@ -87,23 +88,41 @@ margin: auto;
 	font-family: "Comfortaa";
 	color: #777;
 	padding: 0;
-	margin-top: 10vh;
+	margin-top: 5vh;
+	padding: 2vw;
+	width: 40%;
+	border-radius: 10px;
+	background: #ffffff;
+	box-shadow: 6px 6px 11px #d9d9d9,
+		-6px -6px 11px #ffffff;
 }
 
 .timer {
 	display: inline-flex;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: "Comfortaa","Monospace",sans-serif;
+	font-family: "Comfortaa", "Monospace", sans-serif;
 	margin-top: 0;
 	height: 2px;
 	background-color: red;
 }
-.timer p{
+
+.timer p {
 	padding: 0vh 1vw 0vw 1vw;
 	font-size: 150%;
 }
 
-#end {
-	visibility: hidden;
+
+@media screen and (max-width: 1200px) {
+	.countdown{
+		width: 30%;
+	}
+	.countdown h2 {
+		font-size: 1.15em;
+	}
+
+	.timer p {
+		padding: 0vh 1vw 0vw 1vw;
+		font-size: 100%;
+	}
 }
