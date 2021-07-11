@@ -5,14 +5,14 @@
 	<title>Data Calendar</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
-
+	<script src="countdown.js"></script>
 </head>
 
 <body>
 	<div class="wrapper">
 		<div class="dataview">
 			<div class="heatmap" id="hmap">
-				<iframe id="hmframe" src="" scrolling="no"  frameBorder="0"></iframe>
+				<iframe id="hmframe" src="./index0.html" scrolling="no" frameBorder="0"></iframe>
 			</div>
 			<div class="switch">
 				<ul id="switchlist">
@@ -25,6 +25,21 @@
 					<li> <a id="Reasoning" onclick="ch5()" href="#">Reasoning</a></li>
 					<li> <a id="English" onclick="ch6()" href="#">English</a></li>
 				</ul>
+			</div>
+		</div>
+		<div class="countdown">
+			<div id="cd1">
+				<span id="label1">
+					<h2>Time to Prelims...</h2>
+				</span>
+
+				<span class="timer">
+					<p id="days"></p>
+					<p id="hours"></p>
+					<p id="mins"></p>
+					<p id="secs"></p>
+					<h2 id="end"></h2>
+				</span>
 			</div>
 		</div>
 	</div>
