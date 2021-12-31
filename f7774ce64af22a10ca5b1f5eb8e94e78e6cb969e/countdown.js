@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 1, 2022 12:12:12").getTime();
+var countDownDate = new Date("Mar 1, 2022 12:12:12").getTime();
 
 // Run myfunc every second
 var myfunc = setInterval(function () {
@@ -21,10 +21,10 @@ var myfunc = setInterval(function () {
 	// Display the message when countdown is over
 	if (timeleft < 0) {
 		clearInterval(myfunc);
-		document.getElementById("days").style.visibility="hidden";
-		document.getElementById("hours").style.visibility="hidden";
-		document.getElementById("mins").style.visibility="hidden";
-		document.getElementById("secs").style.visibility="hidden";
+		document.getElementById("days").style.visibility = "hidden";
+		document.getElementById("hours").style.visibility = "hidden";
+		document.getElementById("mins").style.visibility = "hidden";
+		document.getElementById("secs").style.visibility = "hidden";
 		document.getElementById("end").innerHTML = "Best of luck for the exam";
 	}
 }, 1000);
