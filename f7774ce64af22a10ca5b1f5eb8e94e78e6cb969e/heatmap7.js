@@ -1,8 +1,8 @@
 		var path = "science.csv";
-		var colours = ["#f09ef3", "#e55dea", "#da1de2", "#9615a1", "#610c61"];
+		var colours = ["#ffffff", "#f09ef3", "#e55dea", "#da1de2", "#9615a1", "#610c61"];
 		var title = "Science and Technology";
 		var units = " hours";
-		var breaks = [2, 4, 6, 8];
+		var breaks = [0, 1, 2, 3, 4];
 
 		//general layout information
 		var cellSize = 17;

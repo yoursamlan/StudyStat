@@ -1,8 +1,8 @@
 		var path = "economics.csv";
-		var colours = ["#dab7c8", "#c187a4", "#a8577f", "#783e5b", "#482536"];
+		var colours = ["#ffffff","#dab7c8", "#c187a4", "#a8577f", "#783e5b", "#482536"];
 		var title = "Indian Economics";
 		var units = " hours";
-		var breaks = [2, 4, 8, 10];
+		var breaks = [0, 1, 2, 4, 6];
 
 		//general layout information
 		var cellSize = 17;

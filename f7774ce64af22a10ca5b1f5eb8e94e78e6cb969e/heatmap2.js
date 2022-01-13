@@ -1,8 +1,8 @@
 		var path = "geography.csv";
-		var colours = ["#a9d0e8", "#70b0d8", "#3791c8", "#27678f", "#173e56"];
+		var colours = ["#ffffff","#a9d0e8", "#70b0d8", "#3791c8", "#27678f", "#173e56"];
 		var title = "Indian Geography";
 		var units = " hours";
-		var breaks = [2, 4, 8, 10];
+		var breaks = [0, 1, 2, 4, 6];
 
 		//general layout information
 		var cellSize = 17;

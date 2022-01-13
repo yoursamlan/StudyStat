@@ -1,8 +1,8 @@
 		var path = "reasoning.csv";
-		var colours = ["#92d4fe", "#4ab7fe", "#019afe", "#016eb5", "#01426d"];
+		var colours = ["#ffffff","#92d4fe", "#4ab7fe", "#019afe", "#016eb5", "#01426d"];
 		var title = "Logical Reasoning";
 		var units = " hours";
-		var breaks = [1, 2, 3, 5];
+		var breaks = [0, 1, 2, 3, 4];
 
 		//general layout information
 		var cellSize = 17;

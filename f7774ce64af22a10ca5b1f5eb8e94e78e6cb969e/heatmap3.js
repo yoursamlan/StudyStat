@@ -1,8 +1,8 @@
 		var path = "polity.csv";
-		var colours = ["#c8a4ec", "#9f68e0", "#7f2bd4", "#641f97", "#37135b"];
+		var colours = ["#ffffff","#c8a4ec", "#9f68e0", "#7f2bd4", "#641f97", "#37135b"];
 		var title = "Indian Polity";
 		var units = " hours";
-		var breaks = [2, 4, 8, 10];
+		var breaks = [0, 1, 2, 4, 6];
 
 		//general layout information
 		var cellSize = 17;

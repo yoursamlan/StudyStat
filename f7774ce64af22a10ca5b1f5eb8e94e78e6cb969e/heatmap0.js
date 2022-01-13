@@ -1,8 +1,8 @@
 		var path = "study.csv";
-		var colours = ["#c9eca4", "#a5e068", "#81d42b", "#5c971f", "#375b13"];
+		var colours = ["#ffffff", "#c9eca4", "#a5e068", "#81d42b", "#5c971f", "#375b13"];
 		var title = "Total Study";
 		var units = " hours";
-		var breaks = [2, 4, 8, 10];
+		var breaks = [0, 1, 2, 4, 8];
 
 		//general layout information
 		var cellSize = 17;

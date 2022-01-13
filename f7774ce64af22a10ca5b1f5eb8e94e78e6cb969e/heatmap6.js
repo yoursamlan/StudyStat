@@ -1,8 +1,8 @@
 		var path = "english.csv";
-		var colours = ["#f3ed9e", "#eae25d", "#e2d61d", "#a19915", "#615c0c"];
+		var colours = ["#ffffff","#f3ed9e", "#eae25d", "#e2d61d", "#a19915", "#615c0c"];
 		var title = "English Comprehension";
 		var units = " hours";
-		var breaks = [1, 2, 3, 5];
+		var breaks = [0, 1, 2, 3, 4];
 
 		//general layout information
 		var cellSize = 17;
